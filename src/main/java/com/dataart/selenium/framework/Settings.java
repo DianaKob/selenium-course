@@ -90,8 +90,8 @@ public class Settings {
             case IE:
                 return new InternetExplorerDriver();
             case GC:
-                File file = new File("/Users/dianka/chromedriver");
-                System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
+//                File file = new File("/Users/dianka/chromedriver");
+//                System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
                 return new ChromeDriver();
             default:
                 throw new UnknownBrowserException("Cannot create driver for unknown browser type");
